@@ -36,7 +36,7 @@ let ExtensionInfoDef;
  */
 export function calculateScriptBaseUrl(location, opt_isLocalDev) {
   if (opt_isLocalDev) {
-    let prefix = `${location.protocol}//${location.host}`;
+    let prefix = `${location.protocol}//${location.host}:8000`;
     if (location.protocol == 'about:') {
       prefix = '';
     }
